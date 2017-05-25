@@ -24,6 +24,14 @@ namespace HelloWorld
 			band.Name = name;
 			Bands.Add(band);		}
 
+		public void AddBand(string[] bandNames)
+		{
+			foreach (var bandName in bandNames)
+			{
+				AddBand(bandName);
+			}
+		}
+
 		public void Announce()
 		{
 			Console.WriteLine(Name + " will have several bands playing tonight!");

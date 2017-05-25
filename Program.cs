@@ -41,8 +41,11 @@ namespace HelloWorld
 
 
 			venueClass.AddBand("Nirvana");
-			venueClass.Announce();
 
+			string[] bandNames = { "Jazztallica", "Jazzadeth"};
+			venueClass.AddBand(bandNames);
+
+			venueClass.Announce();
 			Console.ReadLine();
 		}
 
