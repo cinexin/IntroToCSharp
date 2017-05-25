@@ -27,6 +27,10 @@ namespace HelloWorld
 		public void Announce()
 		{
 			Console.WriteLine(Name + " will have several bands playing tonight!");
+			foreach (var band in Bands)
+			{
+				band.Announce();
+			}
 		}
 	}
 }

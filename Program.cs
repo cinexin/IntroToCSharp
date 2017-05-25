@@ -41,7 +41,7 @@ namespace HelloWorld
 
 
 			venueClass.AddBand("Nirvana");
-
+			venueClass.Announce();
 
 			Console.ReadLine();
 		}
