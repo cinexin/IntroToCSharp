@@ -33,9 +33,14 @@ namespace HelloWorld
 
 			Console.WriteLine(Announce(venue));
 			SelfAnnounce(venue);
+
+
+			Venue venueClass = new Venue();
+			venueClass.Name = "The Jazz Hut";
+			venueClass.Announce();
+
+
 			Console.ReadLine();
-
-
 		}
 
 		static string Announce(string venue)
